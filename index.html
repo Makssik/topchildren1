@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <script src="./js/menu.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container--header">
+        <p class="logo"><span class="logo--blue">Top</span>Children</p>
+        <button type="button" class="nav-button" data-menu-button>
+          <svg>
+            <use
+              class="menu-nav"
+              href="./images/sprite.svg#cross_menu"
+              width="40"
+            ></use>
+            <use
+              class="cross-nav"
+              href="./images/sprite.svg#menu"
+              width="40"
+            ></use>
+          </svg>
+        </button>
+        <div class="navigation" data-menu-button data-menu>
+          <ul class="header__list">
+            <li class="list__item">
+              <a
+                class="header__link header__link--current current"
+                href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="list__item">
+              <a class="header__link" href="#address">Контакты</a>
+            </li>
+          </ul>
+          <ul class="header__list--right">
+            <li class="list__item">
+              <a class="header__link" href="">
+                <svg class="nav__icon" width="16">
+                  <use href="./images/sprite.svg#convert"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="list__item">
+              <a class="header__link" href="">
+                <svg class="nav__icon" width="12">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Герой -->
+      <section class="hero">
+        <h1 class="hero__title">
+          Дитячий театр мод <br />
+          запрошує до навчання
+        </h1>
+        <a href="#form"><button class="hero__button button is-toggle">
+          Подати заявку
+        </button></a>
+      </section>
+      <section class="disciplines">
+        <div class="container">
+          <h2>Предмети, з яких проводяться заняття</h2>
+          <ul class="disciplines__list">
+            <li class="disciplines__item">
+              <img
+                class="disciplines__img"
+                src="./images/model.jpg"
+                width="220"
+                alt=""
+              />
+              <div class="disciplines__description">
+                <h3>Основи моделінгу</h3>
+                <p>Загальні відомості, план розвитку моделі.</p>
+              </div>
+            </li>
+            <li class="disciplines__item">
+              <img
+                class="disciplines__img"
+                src="./images/photopos.jpg"
+                width="220"
+                alt=""
+              />
+              <div class="disciplines__description">
+                <h3>Фотопозування</h3>
+                <p>
+                  Уроки з фотопозування це один з основних предметів у школі
+                  моделей. Адже щоб отримати вдалі кадри важливо не лише
+                  професійно знімати, а й правильно позувати. Круті фото
+                  народжуються по обидва боки об‘єктиву.
+                </p>
+              </div>
+            </li>
+            <li class="disciplines__item">
+              <img
+                class="disciplines__img"
+                src="./images/makeup.jpg"
+                width="220"
+                alt=""
+              />
+              <div class="disciplines__description">
+                <h3>Стиль і макіяж</h3>
+                <p>
+                  Під час курсу вчимося доглядати за шкірою та створювати свій
+                  індивідуальний макіяж. За правилами, але не за шаблоном. Адже
+                  кожен з нас бачить свій макіяж по-різному!
+                </p>
+              </div>
+            </li>
+            <li class="disciplines__item">
+              <img
+                class="disciplines__img"
+                src="./images/defile.jpg"
+                width="220"
+                alt=""
+              />
+              <div class="disciplines__description">
+                <h3>Дефіле</h3>
+                <p>
+                  Основа навчання - це мистецтво дефіле. Воно включає роботу над
+                  модельним кроком і м'язовим корсетом, поставою, розвиток
+                  впевненості в собі, стрижня, вміння демонструвати одяг.
+                </p>
+              </div>
+            </li>
+            <li class="disciplines__item">
+              <img
+                class="disciplines__img"
+                src="./images/teatr.jpg"
+                width="220"
+                alt=""
+              />
+              <div class="disciplines__description">
+                <h3>Акторська майстерність</h3>
+                <p>
+                  Сучасна модель – завжди актриса. Тому акторська майстерність в
+                  даний час є одним з обов'язкових предметів, які вивчають
+                  майбутні моделі. Адже саме цей предмет допомагає розкрити
+                  акторські навички моделі, на ньому здобуваються вміння
+                  виявляти емоції у кадрі.
+                </p>
+              </div>
+            </li>
+            <li class="disciplines__item">
+              <img
+                class="disciplines__img"
+                src="./images/etiket.jpg"
+                width="220"
+                alt=""
+              />
+              <div class="disciplines__description">
+                <h3>Етикет</h3>
+                <p>
+                  Цей унікальний курс дає дитині знання етикету в різних сферах
+                  життя, загальної культури поведінки, допомагає формувати
+                  власний імідж і високу самооцінку для того, щоб вона відчувала
+                  себе впевнено і комфортно в будь-якій ситуації в будь-якому
+                  суспільстві.
+                </p>
+              </div>
+            </li>
+            <li class="disciplines__item">
+              <img
+                class="disciplines__img"
+                src="./images/dance.jpg"
+                width="220"
+                alt=""
+              />
+              <div class="disciplines__description">
+                <h3>Ритм і хореографія</h3>
+                <p>
+                  Заняття танцями не лише розвивають музичність, а й допомагають
+                  виховати силу волю, комунікабельність та розвинути творчий
+                  потенціал. Дійсно, багато досліджень психологів довели, що
+                  діти, які займаються танцями, досягають більших успіхів у
+                  навчанні, ніж їхні однолітки, а також випереджають їх у
+                  загальному розвитку.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <h2>Фото наших моделей</h2>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <img width="300" src="./images/gallery/photo1.jpg" alt="" />
+            </li>
+            <li class="gallery__item">
+              <img width="300" src="./images/gallery/photo5.jpg" alt="" />
+            </li>
+            <li class="gallery__item">
+              <img width="300" src="./images/gallery/photo3.jpg" alt="" />
+            </li>
+            <li class="gallery__item">
+              <img width="300" src="./images/gallery/photo4.jpg" alt="" />
+            </li>
+            <li class="gallery__item">
+              <img width="300" src="./images/gallery/photo6.jpg" alt="" />
+            </li>
+            <li class="gallery__item">
+              <img width="300" src="./images/gallery/photo2.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="map">
+        <div class="container">
+          <h2>Як нас знайти</h2>
+          <p style="text-align: center; margin-bottom: 30px">м. Бориспіль, вул. Шевченка 73</p>
+          <div class="wrapper">
+            <iframe class="map__google"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1272.6818841605175!2d30.95227546563936!3d50.35977110646951!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4e8a0d4f24739%3A0x6f8424a3b0cf2522!2z0YPQuy4g0KjQtdCy0YfQtdC90LrQviwgNzMsINCR0L7RgNC40YHQv9C-0LvRjCwg0JrQuNC10LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMDgzMDA!5e0!3m2!1sru!2sua!4v1675893909451!5m2!1sru!2sua"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="form" class="form">
+        <div class="container">
+          <h2>Подати заявку</h2>
+          <div class="wrapper">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf_cqSExqPuFb8sTQ7CU6EEDuPXQThvSyJkoQrWlUlqcQN9Rg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- BackDrop -->
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+          <button class="modal__button--close is-toggle" data-close-modal>
+            <svg width="11">
+              <use href="./images/sprite.svg#cross"></use>
+            </svg>
+          </button>
+          <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+          <form class="js-speaker-form" name="application">
+            <label class="modal__label">
+              <input
+                class="modal__input"
+                type="text"
+                name="name"
+                placeholder=" "
+              />
+              <span>Имя</span>
+              <svg class="input__icon">
+                <use href="./images/sprite.svg#person" width="18"></use>
+              </svg>
+            </label>
+
+            <label class="modal__label">
+              <input
+                class="modal__input"
+                type="tel"
+                name="tel"
+                placeholder=" "
+              />
+              <span>Телефон</span>
+              <svg class="input__icon">
+                <use href="./images/sprite.svg#call" width="18"></use>
+              </svg>
+            </label>
+
+            <label class="modal__label">
+              <input
+                class="modal__input"
+                type="email"
+                name="email"
+                placeholder=" "
+              />
+              <span>Почта</span>
+              <svg class="input__icon">
+                <use href="./images/sprite.svg#letter" width="18"></use>
+              </svg>
+            </label>
+
+            <!-- <label>
+              <textarea
+                rows="10"
+                placeholder="Введите текст"
+                name="comment"
+              ></textarea>
+              <span>Комментарий</span>
+            </label> -->
+
+            <div class="modal__policity">
+              <label class="policity">
+                <input name="policity" type="checkbox" id="policity" />
+                Соглашаюсь с рассылкой и принимаю
+                <span>Условия договора</span></label
+              >
+            </div>
+
+            <button class="main__button" type="submit" href="">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- Футер -->
+    <footer>
+      <div class="container footer" id="address">
+        <address class="address">
+          <a class="logo" href=""
+            ><span class="logo--blue">Top</span><span>Children</span></a
+          >
+          <ul class="address__list">
+            <li class="address__item">
+              <span>м. Бориспіль, вул. Шевченка 73</span>
+            </li>
+            <li class="address__item">nika.shepetko@gmail.com</li>
+            <li class="address__item">+38(066)359 51 01</li>
+          </ul>
+        </address>
+        <div>
+          <h2 class="title">Наші соцмережі</h2>
+          <ul class="social__list">
+            <li class="social__item--footer">
+              <a href="https://www.instagram.com/topchildren_boryspil/">
+                <svg width="20">
+                  <use href="./images/sprite.svg#insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item--footer">
+              <a href="https://www.facebook.com/TopChildren.Boryspil/">
+                <svg width="20">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
