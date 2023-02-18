@@ -8,9 +8,8 @@ const element = {
 let offset = 0;
 let maxPixelsToOffset = 0;
 function slider() {
+  const windowSize = window.screen.width;
   element.buttonFrwd.addEventListener('click', () => {
-    const windowSize = window.screen.width;
-    console.log(windowSize);
     if (windowSize <= 480) {
       maxPixelsToOffset = -1650;
     } else if (windowSize > 768 && windowSize <= 1440) {
@@ -18,13 +17,12 @@ function slider() {
     } else if (windowSize > 1440) {
       maxPixelsToOffset = -990;
     }
+
     offset > maxPixelsToOffset ? (offset -= 330) : (offset = 0);
+
     element.list.style.left = offset + 'px';
-    console.log(element.list.style.left);
   });
   element.buttonPrev.addEventListener('click', () => {
-    const windowSize = window.screen.width;
-    console.log(windowSize);
     if (windowSize <= 480) {
       maxPixelsToOffset = -1650;
     } else if (windowSize > 768 && windowSize <= 1440) {
@@ -32,9 +30,11 @@ function slider() {
     } else if (windowSize > 1440) {
       maxPixelsToOffset = -990;
     }
-    offset > maxPixelsToOffset ? (offset -= 330) : (offset = 0);
+
+      offset > maxPixelsToOffset && offset <=-1? (offset += 330) : (offset = 0);
+      
+
     element.list.style.left = offset + 'px';
-    console.log(element.list.style.left);
   });
 }
 
